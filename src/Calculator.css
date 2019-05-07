@@ -1,0 +1,26 @@
+.calculator{
+    text-align: -webkit-center;
+    font-size: 22px;
+}
+.calculator__table{
+
+width:50%;
+border-collapse: collapse;
+
+}
+.calculator__table__body{
+    border: 1px solid red;
+}
+td, th{
+    border: 1px solid red;
+    text-align: center;
+    padding:28px;
+}
+.result th{
+    background-color:#632323;
+    color:white;
+    font-weight: 100;
+    font-size: 50px;
+    padding: 6px;
+
+}
