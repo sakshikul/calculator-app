@@ -1,18 +1,20 @@
 .calculator{
     text-align: -webkit-center;
     font-size: 22px;
+    margin-top:50px;
 }
 .calculator__table{
 
 width:50%;
 border-collapse: collapse;
+box-shadow: 0px 0px 40px 50px purple;
 
 }
 .calculator__table__body{
     border: 1px solid red;
 }
 td, th{
-    border: 1px solid red;
+    border: 1px solid black;
     text-align: center;
     padding:28px;
 }
@@ -23,4 +25,10 @@ td, th{
     font-size: 50px;
     padding: 6px;
 
+}
+.red{
+    background-color: red;
+    color:white;
+    font-size: 45px;
+    padding:7px;
 }

@@ -29,25 +29,25 @@ class Calculator extends React.Component{
                 </tr>
                 <tr className = "clear row">
                     <td colspan="3">{this.state.calculator}</td>
-                    <td>&divide; </td>
+                    <td className= "red">&divide; </td>
                 </tr>
                 <tr className = "row">
                    <td>7</td>
                    <td>8</td>
                    <td>9</td>  
-                   <td>-</td>
+                   <td className = "red">-</td>
                 </tr>
                 <tr className = "row">
                    <td>4</td>
                    <td>5</td>
                    <td>6</td>
-                   <td> + </td>
+                   <td className = "red"> + </td>
                 </tr>
                 <tr className = "row">
                    <td>1</td>
                    <td>2</td>
                    <td>3</td>
-                   <td> = </td>
+                   <td className = "red"> = </td>
                 </tr>
                 </tbody>
             </table>
