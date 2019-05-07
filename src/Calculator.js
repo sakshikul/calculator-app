@@ -28,7 +28,8 @@ class Calculator extends React.Component{
                     <th colspan="4">{this.state.result}</th>
                 </tr>
                 <tr className = "clear row">
-                    <td colspan="3">{this.state.calculator}</td>
+                    <td colspan="2">{this.state.calculator}</td>
+                    <td>0</td>
                     <td className= "red">&divide; </td>
                 </tr>
                 <tr className = "row">
