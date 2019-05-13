@@ -22,13 +22,12 @@ class Calculator extends React.Component{
          
      })
    }
-
-  clearClick(x){
+   clearClick(x){
     this.setState({
         result  : ""
     })
   }
-
+  
   operatorHandleClick = (y) => {
      var z = y.target.name;
      if(z === "="){
@@ -38,6 +37,8 @@ class Calculator extends React.Component{
         }) 
      }
 }
+
+
      
   
    
