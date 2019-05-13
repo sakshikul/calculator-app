@@ -9,18 +9,36 @@ class Calculator extends React.Component{
            result : ""
     }
        
-    this.handleClick = this.handleClick.bind(this)
+    this.handleClick = this.handleClick.bind(this);
+    this.operatorHandleClick = this.operatorHandleClick.bind(this);
+    this.clearClick = this.clearClick.bind(this)
     }
     
     
-    handleClick(x) {
+    handleClick = (x) =>{
      var s = x.target.name;
      this.setState({
-         result :  this.state.result + s
+        result :  this.state.result + s
          
      })
    }
 
+  clearClick(x){
+    this.setState({
+        result  : ""
+    })
+  }
+
+  operatorHandleClick = (y) => {
+     var z = y.target.name;
+     if(z === "="){
+       this.setState({
+             // eslint-disable-next-line
+            result :eval(this.state.result) 
+        }) 
+     }
+}
+     
   
    
     render(){  
@@ -42,8 +60,8 @@ class Calculator extends React.Component{
                 <button name ="-" onClick = {this.handleClick}>-</button>
                 <button name ="/" onClick = {this.handleClick}> &divide;</button>
                 <button name ="*" onClick = {this.handleClick}>*</button>
-                <button name = "=" onClick = {this.handleClick}>=</button>
-                <button name = "clear" onClick = {this.handleClick}>"Ac"</button>
+                <button name = "=" onClick = {this.operatorHandleClick}>=</button>
+                <button name = "" onClick = {this.clearClick}>Ac</button>
             </div>
         )
     }
